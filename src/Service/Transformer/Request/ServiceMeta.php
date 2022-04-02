@@ -7,11 +7,4 @@ use Rinsvent\Transformer\Transformer\Meta;
 abstract class ServiceMeta extends Meta
 {
     public const TYPE = 'service';
-
-    public function __construct(
-        public ?string $default = null,
-        public array $tags = ['default']
-    ) {
-        parent::__construct($tags);
-    }
 }

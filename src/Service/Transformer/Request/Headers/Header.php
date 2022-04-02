@@ -12,6 +12,6 @@ class Header extends ServiceMeta
         public ?string $default = null,
         public array $tags = ['request_headers']
     ) {
-        parent::__construct($default, $tags);
+        parent::__construct($tags);
     }
 }
