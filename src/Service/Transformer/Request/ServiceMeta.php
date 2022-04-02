@@ -9,7 +9,7 @@ abstract class ServiceMeta extends Meta
     public const TYPE = 'service';
 
     public function __construct(
-        public string $default,
+        public ?string $default = null,
         public array $tags = ['default']
     ) {
         parent::__construct($tags);
