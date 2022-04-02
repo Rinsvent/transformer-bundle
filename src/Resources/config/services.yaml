@@ -1,0 +1,18 @@
+services:
+  _defaults:
+    autoconfigure: true
+    public: false
+    autowire: true
+
+  Rinsvent\TransformerBundle\EventListener\RequestListener:
+    autowire: true
+    tags:
+      - { name: kernel.event_listener, event: kernel.request, priority: 10000 }
+
+  Rinsvent\TransformerBundle\Service\ServiceResolver:
+    bind:
+      $transformerLocator: !tagged_locator { tag: 'rinsvent.transformer.transformer', index_by: 'key', default_index_method: 'getLocatorKey' }
+
+  _instanceof:
+    Rinsvent\TransformerBundle\Service\AbstractTransformer:
+      tags: [ 'rinsvent.transformer.transformer' ]
