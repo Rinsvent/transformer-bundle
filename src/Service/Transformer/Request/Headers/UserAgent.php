@@ -2,10 +2,10 @@
 
 namespace Rinsvent\TransformerBundle\Service\Transformer\Request\Headers;
 
-use Rinsvent\Transformer\Transformer\Meta;
+use Rinsvent\TransformerBundle\Service\Transformer\Request\ServiceMeta;
 
 #[\Attribute]
-class UserAgent extends Meta
+class UserAgent extends ServiceMeta
 {
 
 }

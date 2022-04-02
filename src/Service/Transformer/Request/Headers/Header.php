@@ -2,10 +2,10 @@
 
 namespace Rinsvent\TransformerBundle\Service\Transformer\Request\Headers;
 
-use Rinsvent\Transformer\Transformer\Meta;
+use Rinsvent\TransformerBundle\Service\Transformer\Request\ServiceMeta;
 
 #[\Attribute]
-class Header extends Meta
+class Header extends ServiceMeta
 {
     public function __construct(
         public string $property,

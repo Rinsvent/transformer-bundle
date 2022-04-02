@@ -2,10 +2,10 @@
 
 namespace Rinsvent\TransformerBundle\Service\Transformer\Request\Server;
 
-use Rinsvent\Transformer\Transformer\Meta;
+use Rinsvent\TransformerBundle\Service\Transformer\Request\ServiceMeta;
 
 #[\Attribute]
-class Ip extends Meta
+class Ip extends ServiceMeta
 {
 
 }
