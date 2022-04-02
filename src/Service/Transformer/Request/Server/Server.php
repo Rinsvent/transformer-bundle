@@ -1,6 +1,6 @@
 <?php
 
-namespace Rinsvent\Data2DTOBundle\Service\Transformer\Request\Server;
+namespace Rinsvent\TransformerBundle\Service\Transformer\Request\Server;
 
 use Rinsvent\Transformer\Transformer\Meta;
 
