@@ -2,7 +2,7 @@
 
 namespace Rinsvent\TransformerBundle\Service\Transformer\Request\Headers;
 
-use Codeception\Step\Meta;
+use Rinsvent\Transformer\Transformer\Meta;
 
 #[\Attribute]
 class UserAgent extends Meta
